@@ -28,8 +28,8 @@ Site URL will be:
 
 ### App Store Connect URLs
 
-- Support: `https://evanl01.github.io/enscribe-app-pages/crossword-traveller/`
-- Privacy: `https://evanl01.github.io/enscribe-app-pages/crossword-traveller/privacy.html`
+- Support (per app): `https://evanl01.github.io/enscribe-app-pages/crossword-traveller/`
+- Privacy (company-wide): `https://evanl01.github.io/enscribe-app-pages/privacy.html`
 
 ### Custom domain (optional later)
 
@@ -39,12 +39,11 @@ Site URL will be:
 
 ## Add another app
 
-Create a folder:
+Create a folder with a support page:
 
 ```
 other-app/
-  index.html      # support
-  privacy.html    # privacy policy
+  index.html      # support (how to use / contact)
 ```
 
-Link it from the root `index.html`.
+Link it from the root `index.html`. Point App Store privacy URLs at the shared `/privacy.html`.

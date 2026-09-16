@@ -3,30 +3,50 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Enscribe Apps</title>
+    <title>Enscribe</title>
     <meta
       name="description"
-      content="Support and privacy pages for apps from Enscribe."
+      content="Enscribe builds and publishes mobile apps. Support and privacy information for our products."
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <main class="wrap">
-      <a class="brand" href="./">Enscribe</a>
-      <h1>Apps</h1>
+      <p class="brand">Enscribe</p>
+      <h1>Mobile apps from Enscribe</h1>
       <p class="lead">
-        Support and privacy information for apps published by Enscribe.
+        We design, build, and publish mobile apps. Use the links
+        below for product support and privacy details.
       </p>
 
-      <a class="card" href="./crossword-traveller/" style="display: block; text-decoration: none; color: inherit">
-        <h2>Crossword Traveller</h2>
-        <p>Word-finding puzzle game for iPhone and iPad.</p>
-        <p class="meta"><span style="color: var(--accent)">Support &amp; privacy →</span></p>
-      </a>
+      <section>
+        <h2>Apps</h2>
+        <ul class="app-list">
+          <li>
+            <a href="./crossword-traveller/">
+              <span class="app-name">Crossword Traveller</span>
+              <span class="app-desc">Word puzzle for iPhone and iPad</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Contact</h2>
+        <p>
+          For support or other questions, email
+          <a href="mailto:support@enscribe.online">support@enscribe.online</a>.
+        </p>
+        <p>
+          <a href="./privacy.html">Privacy Policy</a>
+        </p>
+      </section>
 
       <footer>
-        Questions?
-        <a href="mailto:support@enscribe.online">support@enscribe.online</a>
+        © <span id="y"></span> Enscribe
+        <script>
+          document.getElementById("y").textContent = new Date().getFullYear();
+        </script>
       </footer>
     </main>
   </body>
