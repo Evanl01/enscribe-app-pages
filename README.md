@@ -26,17 +26,23 @@ Site URL will be:
 
 `https://evanl01.github.io/enscribe-app-pages/`
 
+Custom domain: `https://dev.enscribe.online`
+
 ### App Store Connect URLs
 
-- Support (per app): `https://evanl01.github.io/enscribe-app-pages/crossword-traveller/`
-- Privacy (company-wide): `https://evanl01.github.io/enscribe-app-pages/privacy.html`
+- Support (per app): `https://dev.enscribe.online/crossword-traveller/`
+- Privacy (company-wide): `https://dev.enscribe.online/privacy.html`
 
-### Custom domain (optional later)
+### Custom domain (`dev.enscribe.online`)
 
-1. Add a `CNAME` file in the repo root with e.g. `apps.enscribe.online`
-2. Point DNS CNAME `apps` → `evanl01.github.io`
-3. Enable HTTPS in Pages settings
-
+1. Repo has a root `CNAME` file with `dev.enscribe.online`.
+2. GitHub → **Settings** → **Pages** → Custom domain: `dev.enscribe.online` → Save → enable **Enforce HTTPS** once DNS checks pass.
+3. Cloudflare → DNS → Add record:
+   - Type: **CNAME**
+   - Name: `dev`
+   - Target: `evanl01.github.io`
+   - Proxy: **DNS only** (grey cloud) until HTTPS works; you can turn proxy on later with SSL mode **Full**.
+4. Wait a few minutes for DNS, then confirm `https://dev.enscribe.online` loads.
 ## Add another app
 
 Create a folder with a support page:
