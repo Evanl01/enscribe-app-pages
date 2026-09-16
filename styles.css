@@ -1,0 +1,121 @@
+:root {
+  --bg: #f6f3ec;
+  --ink: #1c2b2d;
+  --muted: #5c6b6d;
+  --accent: #0f766e;
+  --card: #ffffff;
+  --line: rgba(28, 43, 45, 0.12);
+  --max: 40rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: Georgia, "Times New Roman", serif;
+  line-height: 1.55;
+}
+
+body {
+  min-height: 100vh;
+}
+
+a {
+  color: var(--accent);
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.wrap {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 2.5rem 1.25rem 4rem;
+}
+
+.brand {
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+  text-decoration: none;
+}
+
+.brand:hover {
+  text-decoration: none;
+  color: var(--ink);
+}
+
+h1 {
+  margin: 0.75rem 0 0.5rem;
+  font-size: 2rem;
+  line-height: 1.15;
+}
+
+.lead {
+  margin: 0 0 1.75rem;
+  color: var(--muted);
+  font-size: 1.05rem;
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 1.15rem 1.25rem;
+  margin: 0 0 1rem;
+}
+
+.card h2 {
+  margin: 0 0 0.35rem;
+  font-size: 1.2rem;
+}
+
+.card p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.meta {
+  margin-top: 0.65rem;
+  font-size: 0.92rem;
+}
+
+nav.crumbs {
+  margin: 1.25rem 0 0;
+  font-size: 0.95rem;
+  color: var(--muted);
+}
+
+section {
+  margin: 1.5rem 0;
+}
+
+section h2 {
+  font-size: 1.15rem;
+  margin: 0 0 0.5rem;
+}
+
+section p,
+section ul {
+  margin: 0 0 0.85rem;
+}
+
+section ul {
+  padding-left: 1.2rem;
+}
+
+footer {
+  margin-top: 2.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 0.9rem;
+}
